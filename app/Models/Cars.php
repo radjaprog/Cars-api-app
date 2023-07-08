@@ -31,6 +31,11 @@ class Cars extends Model
         return $query->where('model', 'LIKE', '%' . $model . '%');
     }
 
+    // public function user()
+    // {
+    //     return $this->belongsTo(User::class);
+    // }
+
     // public static function scopeSearchByBrand($term)
     // {
     //     return self::where('brand', 'LIKE', '%' . $term . '%');
