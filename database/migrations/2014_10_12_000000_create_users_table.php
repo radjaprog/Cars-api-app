@@ -1,3 +1,4 @@
+
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -9,7 +10,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
@@ -24,6 +25,8 @@ return new class extends Migration
 
     /**
      * Reverse the migrations.
+     * 
+     * @return void
      */
     public function down(): void
     {
