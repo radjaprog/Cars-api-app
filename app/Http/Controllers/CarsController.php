@@ -99,7 +99,7 @@ class CarsController extends Controller
 
         $car = Cars::find($id);
         if ($car === null) {
-            return response("Fuck you konju debilni, upisi dobar id, id{$id} ne postoji, Response::HTTP_NOT_FOUND");
+            return response("id is not valid. Please enter valid id, id{$id} does not exist, Response::HTTP_NOT_FOUND");
         } else {
             $car->update([
                 'brand' => request('brand'),
@@ -134,6 +134,6 @@ class CarsController extends Controller
 }
 
 // if ($car === null) {
-//     return response("Fuck you konju debilni, upisi dobar id, id{$id} ne postoji, Response::HTTP_NOT_FOUND");
+//     return response("upisi dobar id, id{$id} ne postoji, Response::HTTP_NOT_FOUND");
 // } else {
 //     $car-
